@@ -1,0 +1,181 @@
+/*CSS-variables, väärtuseid saab üle lehe taaskasutada*/
+:root {
+    --dark-color:#613c18;
+    --dark-transparent: #613c18c0;
+    --medium-color: #898da3;
+    --medium-transparent: #898da39f;
+    --light-color: #e2bb9a;
+    --light-transparent: #e2ba9ac9;
+}
+
+@font-face {
+    font-family: MyNuosu;
+    src: url('../fonts/NuosuSIL-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-color);
+    font-family: MyNuosu;
+    text-align: center;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    background-image: url(../images/pic1.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.intro-image__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro-image__link a {
+    border: 2px solid var(--dark-color);
+    display: inline-block;
+    background-color: var(--light-transparent);
+    color: var(--dark-color);
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+.intro-image__link a:hover, .quality-image__link a:hover, .origin-image__link a:hover {
+    transform: scale(1.2);
+}
+
+.intro-text {
+    display: flex;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    height: 250px;
+    padding: 0 15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.quality-image {
+    background-attachment: fixed;
+    background-image: url('../images/pic2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quality-image__link a {
+    border: 2px solid var(--light-color);
+    display: inline-block;
+    background-color: var(--medium-transparent);
+    color: var(--dark-color);
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.quality-text {
+    display: flex;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    height: 250px;
+    padding: 0 15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality-text h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.origin-image {
+    background-attachment: fixed;
+    background-image: url('../images/pic3.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.origin-image__link a {
+    border: 2px solid var(--dark-color);
+    display: inline-block;
+    background-color: var(--light-transparent);
+    color: var(--dark-color);
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.origin-text {
+    display: flex;
+    background-color: var(--medium-transparent);
+    color: var(--dark-color);
+    height: 250px;
+    padding: 0 15rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.origin-text h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    height: 250px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-size: 1.3rem;
+}
+
+.contact {
+    padding-top: 2rem;
+}
+
+.contact ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: var(--light-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact ul li a:hover {
+    color: var(--medium-color);
+}
+
+.footer p {
+    margin-top: 2rem;
+}
